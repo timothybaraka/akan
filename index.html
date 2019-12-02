@@ -6,36 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AKAN</title>
+    <link href="styles.css" type="text" rel="stylesheet">
 </head>
 <body>
-        <p>Input you birthdate in the form below;</p>
+    <h1>AKAN NAMES</h1>
+    <p>The Ghanaian people have a system of namingchildren depending on the day they were born.In the</br>
+    form below,input your birthdate and your Akan name will be displayed.</br></p>
+        
         <form>
+            <p>Month:</p>
+            <input id="year" type="number"></br>
+            <p>Year:</p>
+            <input id="month" type="number"></br>
+            <p>Date:</p>
+            <input id="date" type="number"></br>
     
             <label for="gender">MALE</label>
             <input type="radio" name="gender-choice" >
     
             <label for="gender">FEMALE</label>
             <input type="radio" name="gender-choice" >
-    <div>
-        <label for="birthday">Birthday</label>
-        <select name="Month">
-                <option value="0" selected disabled>Month</option>
-                <option value="Jan">January</option>
-                <option value="feb">February</option>
-                <option value="mar">March</option>
-                <option value="apr">April</option>
-                <option value="may">May</option>
-                <option value="jun">June</option>
-                <option value="jul">July</option>
-                <option value="aug">August</option>
-                <option value="sept">September</option>
-                <option value="oct">October</option>
-                <option value="nov">November</option>
-                <option value="dec">December</option>
-          </select>
-    </div>
     
-            </form>
+    </form>
+    <script>
+        function maleNames(){
+            var year=parseInt(document.getElementById("year").value|0);
+            var month=parseInt(document.getElementById("month").value|0);
+            var date=parseInt(document.getElementById("date").value|0);
+
+
+            var d=new date(year,month,date);
+            var myDay=d.getDay();
+
+            if (myDay==0){
+                document.getElemntById("result").innerHTML+= "Kwasi";
+            }
+            if (myDay==1){
+                document.getElemntById("result").innerHTML+= "Kwadwo";
+            }
+            if (myDay==2){
+                document.getElemntById("result").innerHTML+= "Kwabena";
+            }
+            if (myDay==3){
+                document.getElemntById("result").innerHTML+= "Kwaku";
+            }
+            if (myDay==4){
+                document.getElemntById("result").innerHTML+= "Yaw";
+            }
+            if (myDay==5){
+                document.getElemntById("result").innerHTML+= "Kofi";
+            }
+            if (myDay==6){
+                document.getElemntById("result").innerHTML+= "Kwame";
+            }
+        }
+    function femaleNames(){
+        var year=parseInt(document.getElementById("year").value|0);
+        var month=parseInt(document.getElementById("month").value|0);
+        var date=parseInt(document.getElementById("date").value|0);
+    }    
     
 </body>
 </html>

@@ -16,6 +16,7 @@ The programme is bug free and very easy to use.
 The following languages were used:
   HTML
   CSS
+  Java script
   Bootstrap
 
 ## Support and contact details

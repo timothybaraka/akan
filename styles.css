@@ -1,6 +1,12 @@
-h1{
+#head{
+    text-align:center;
+
+}
+#classkan{
+
     text-align:center;
 }
-img{
-    text-align:center;
+body{
+    background-color: bisque;
+    padding-left:70px;
 }

@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <script src=akan.js></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>AKAN</title>
     <link href="bootstrap.css" rel="stylesheet" type="text">
     <link href="styles.css" type="text" rel="stylesheet">
@@ -26,73 +24,79 @@
             <input id="date" type="number"></br>
     
             
-            <input type="radio" name="gender" value="men" onclick="maleNames()">Men
+            <input type="radio" name="gender" value="men" onclick="maleFunction()">Men
     
             
-            <input type="radio" name="gender" value="women" onclick="femaleNames()">Women
+            <input type="radio" name="gender" value="women" onclick="femaleFunction()">Women
     
     </form>
     <p class="akanname">Your Akan name is:</p>
     <p id="result"></p>
     <script>
-        function maleNames(){
-            var year=parseInt(document.getElementById("year").value|0);
-            var month=parseInt(document.getElementById("month").value|0);
-            var date=parseInt(document.getElementById("date").value|0);
-
-
-            var d=new date(year,month,date);
-            var myDay=d.getDay();
-
-            if (myDay==0){
-                document.getElementById("result").innerHTML+= "Kwasi";
+            function maleFunction() {
+              var year = parseInt(document.getElementById("year").value | 0);
+              var month = parseInt(document.getElementById("month").value | 0);
+              var date = parseInt(document.getElementById("date").value | 0);
+              var d = new Date(year, month, date);
+              var myDay = d.getDay();
+        
+              if (myDay == 0) {
+                document.getElementById("result").innerHTML += "KWASI";
+              }
+              if (myDay == 1) {
+                document.getElementById("result").innerHTML += "KWADWO";
+              }
+              if (myDay == 2) {
+                document.getElementById("result").innerHTML += "KWABENA";
+              }
+              if (myDay == 3) {
+                document.getElementById("result").innerHTML += "KWAKU";
+              }
+              if (myDay == 4) {
+                document.getElementById("result").innerHTML += "YAW";
+              }
+              if (myDay == 5) {
+                document.getElementById("result").innerHTML += "KOFFI";
+              }
+              if (myDay == 6) {
+                document.getElementById("result").innerHTML += "KWAME";
+              }
             }
-            if (myDay==1){
-                document.getElementById("result").innerHTML+= "Kwadwo";
+        
+            function femaleFunction() {
+              var year = parseInt(document.getElementById("year").value | 0);
+              var month = parseInt(document.getElementById("month").value | 0);
+              var date = parseInt(document.getElementById("date").value | 0);
+              var d = new Date(year, month, date);
+              var myDay = d.getDay();
+        
+              if (myDay == 0) {
+                document.getElementById("result").innerHTML += "AKOSUA";
+              }
+              if (myDay == 1) {
+                document.getElementById("result").innerHTML += "ADWOA";
+              }
+              if (myDay == 2) {
+                document.getElementById("result").innerHTML += "ABENA";
+              }
+              if (myDay == 3) {
+                document.getElementById("result").innerHTML += "AKUA";
+              }
+              if (myDay == 4) {
+                document.getElementById("result").innerHTML += "YAA";
+              }
+              if (myDay == 5) {
+                document.getElementById("result").innerHTML += "AFUA";
+              }
+              if (myDay == 6) {
+                document.getElementById("result").innerHTML += "AMMA";
+              }
             }
-            if (myDay==2){
-                document.getElementById("result").innerHTML+= "Kwabena";
-            }
-            if (myDay==3){
-                document.getElementById("result").innerHTML+= "Kwaku";
-            }
-            if (myDay==4){
-                document.getElementById("result").innerHTML+= "Yaw";
-            }
-            if (myDay==5){
-                document.getElementById("result").innerHTML+= "Kofi";
-            }
-            if (myDay==6){
-                document.getElementById("result").innerHTML+= "Kwame";
-            }
-        }
-    function femaleNames(){
-        var year=parseInt(document.getElementById("year").value|0);
-        var month=parseInt(document.getElementById("month").value|0);
-        var date=parseInt(document.getElementById("date").value|0);
-
-        if (myDay==0){
-                document.getElementById("result").innerHTML+= "Akosua";
-            }
-            if (myDay==1){
-                document.getElementById("result").innerHTML+= "Adwoa";
-            }
-            if (myDay==2){
-                document.getElementById("result").innerHTML+= "Abena";
-            }
-            if (myDay==3){
-                document.getElementById("result").innerHTML+= "Akua";
-            }
-            if (myDay==4){
-                document.getElementById("result").innerHTML+= "Yaa";
-            }
-            if (myDay==5){
-                document.getElementById("result").innerHTML+= "Afua";
-            }
-            if (myDay==6){
-                document.getElementById("result").innerHTML+= "Ame";
-            }
-    }    
+          </script>
+        </body>
+        
+        </html>
+        
     
 </body>
 </html>

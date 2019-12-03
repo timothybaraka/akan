@@ -1,7 +1,7 @@
 # The Akan 
 #### The application takes a users date of birth and according to the day he/she was born outputs their Akan name.
 This is the most current version as of 10/3/2019
-#### By **{List of contributors}**
+#### By Timothy Baraka
 ## Description
 The application takes a users date of birth and according to the day he/she was born outputs their Akan name
 ## Setup/Installation Requirements

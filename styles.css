@@ -1,6 +1,9 @@
-#head{
+h1{
     text-align:center;
 
+}
+img{
+    text-align:center;
 }
 #classkan{
 
@@ -9,5 +12,5 @@
 body{
     background-color: rgb(250, 163, 57);
     padding-left:100px;
-    padding-right: 100px;
+    padding-right:100px;
 }
